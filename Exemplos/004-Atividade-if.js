@@ -12,7 +12,25 @@ let soma = n1 + n2;
 let media= soma / 2;
 
 if (media <= 5 ){
-    console.log('Sua nota é: ' + media);
+    console.log('Sua nota é: ' + media, 'Média I' );
 }
+
+
+if (media >= 7 ){
+    console.log('Sua nota é: ' + media, 'Média R' );
+}
+
+
+if (media >= 8  ){
+    console.log('Sua nota é: ' + media, 'Média B' );
+}
+
+
+if (media >= 9 ){
+    console.log('Sua nota é: ' + media, 'Média MB' );
+}
+
+
+
 
 
