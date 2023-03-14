@@ -8,7 +8,7 @@ let entrada = require('prompt-sync')();
 
 console.log('Programa de cáculo de notas da ETEC');
 let valor, n; 
-let cont = 0, soma = 10;
+let cont = 0, soma = 0;
 
 do {
     cont++;
@@ -16,10 +16,10 @@ do {
     n = parseFloat(valor);
     if (!isNaN(n)){
         soma += n;}
-} while (valor !== 'fim');
+} while (valor.toLocaleLowerCase() != 'fim') ;
 
 
-let media = soma / cont -1;
+media = soma / (cont -1);
 console.log(media);
 if (media < 5) {
     valor = 'I';
@@ -30,7 +30,7 @@ if (media >= 5 && media < 6.5) {
 }
 
 if (media > 6.5 && media < 8.5) {
-    valor = 'R';
+    valor = 'B';
 }
 
 if (media >= 8.5) {
